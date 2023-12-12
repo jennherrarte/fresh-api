@@ -24,7 +24,13 @@ try {
     },
   });
 
+  // const document = await _db.collection("listingsAndReviews").findOne({});
+  // console.log(document);
   console.log("connected to db", _db);
 } catch (error) {
   console.log("error", error);
 }
+
+
+const db = client.database("sample_airbnb")
+export default db;
